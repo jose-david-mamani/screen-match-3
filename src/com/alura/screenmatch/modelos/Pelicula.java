@@ -17,4 +17,14 @@ public class Pelicula extends Titulo implements Clasificable {
     public int getClasificacion() {
         return (int) calculaMediaEvaluaciones() / 2;
     }
+
+//    @Override
+
+
+    @Override
+    public String toString() {
+        //if (getDirector())
+               return  " Pelicula " + getNombre().toUpperCase() + '\n' +
+                " Y su clasificacion es de " + getClasificacion();
+    }
 }
